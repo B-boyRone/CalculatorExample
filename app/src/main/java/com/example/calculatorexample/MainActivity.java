@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
     int factorial(int n) {
         return (n == 1 || n == 0) ? 1 : n * factorial(n - 1);
     }
-
+// Sunarthsh Pou Ypologizei arithitikew parastashs
     public static double eval(final String str) {
         return new Object() {
             int pos = -1, ch;
