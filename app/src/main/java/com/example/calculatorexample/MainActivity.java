@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button bnum1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bplus, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcos, bsin, bb1, bb2, bc, bac, bmul;
+    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bpluss, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcos, bsin, bb1, bb2, bc, bac, bmul;
     TextView tvmain, tvsec;
     String pi = "3.14159265";
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bnum1 = findViewById(R.id.b1);
+        b1 = findViewById(R.id.b1);
         b2 = findViewById(R.id.b2);
         b3 = findViewById(R.id.b3);
         b4 = findViewById(R.id.b4);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         bpi = findViewById(R.id.bpi);
         bdot = findViewById(R.id.bdot);
         bequal = findViewById(R.id.bequal);
-        bplus = findViewById(R.id.bplus);
+        bpluss = findViewById(R.id.bplus);
         bmin = findViewById(R.id.bmin);
         bmul = findViewById(R.id.bmul);
         bdiv = findViewById(R.id.bdiv);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         tvsec = findViewById(R.id.tvsec);
 
 
-        bnum1.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvmain.setText(tvmain.getText() + "1");
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 tvmain.setText(val);
             }
         });
-        bplus.setOnClickListener(new View.OnClickListener() {
+        bpluss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvmain.setText(tvmain.getText() + "+");
