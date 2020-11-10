@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bplus, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcos, bsin, bb1, bb2, bc, bac, bmul;
+    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, badd, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcos, bsin, bb1, bb2, bc, bac, bmul;
     TextView tvmain, tvsec;
     String pi = "3.14159265";
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         bpi = findViewById(R.id.bpi);
         bdot = findViewById(R.id.bdot);
         bequal = findViewById(R.id.bequal);
-        bplus = findViewById(R.id.bplus);
+        badd = findViewById(R.id.badd);
         bmin = findViewById(R.id.bmin);
         bmul = findViewById(R.id.bmul);
         bdiv = findViewById(R.id.bdiv);
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 tvmain.setText(val);
             }
         });
-        bplus.setOnClickListener(new View.OnClickListener() {
+        badd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvmain.setText(tvmain.getText() + "+");
