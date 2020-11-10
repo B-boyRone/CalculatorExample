@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bpluss, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcos, bsin, bb1, bb2, bc, bac, bmul;
+    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bpluss, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcoss, bsin, bb1, bb2, bc, bac, bmul;
     TextView tvmain, tvsec;
     String pi = "3.14159265";
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         blog = findViewById(R.id.blog);
         btan = findViewById(R.id.btan);
         bsin = findViewById(R.id.bsin);
-        bcos = findViewById(R.id.bcos);
+        bcoss = findViewById(R.id.bcos);
         bb1 = findViewById(R.id.bb1);
         bb2 = findViewById(R.id.bb2);
         bc = findViewById(R.id.bc);
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
                 tvmain.setText(tvmain.getText() + "sin");
             }
         });
-        bcos.setOnClickListener(new View.OnClickListener() {
+        bcoss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvmain.setText(tvmain.getText() + "cos");
