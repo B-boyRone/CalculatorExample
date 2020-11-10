@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bpluss, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blog, btan, bcoss, bsin, bb1, bb2, bc, bac, bmul;
+    Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bdot, bpi, bequal, bpluss, bmin, bsum, bdiv, binv, bsqrt, bsquare, bfact, bln, blogg, btan, bcoss, bsin, bb1, bb2, bc, bac, bmul;
     TextView tvmain, tvsec;
     String pi = "3.14159265";
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         bsquare = findViewById(R.id.bsquare);
         bfact = findViewById(R.id.bfact);
         bln = findViewById(R.id.bln);
-        blog = findViewById(R.id.blog);
+        blogg = findViewById(R.id.blogg);
         btan = findViewById(R.id.btan);
         bsin = findViewById(R.id.bsin);
         bcoss = findViewById(R.id.bcos);
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
                     tvmain.setText(tvmain.getText() + "ln");
                 }
         });
-        blog.setOnClickListener(new View.OnClickListener() {
+        blogg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvmain.setText(tvmain.getText() + "log");
